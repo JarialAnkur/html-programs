@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>	
+</head>
+<body>
+USD <input type="number" id="demo1" ><br>
+INDIAN	<input type="number" id="demo2">
+
+
+<script type="text/javascript">
+	/*function conv(){
+		var num1=document.getElementById('demo1').value;
+		var result= num1*72.5;
+		
+		document.getElementById('demo2').value=result;
+	}
+
+	function conv1(){
+		var num2=document.getElementById('demo2').value;
+		var result1= num2/72.5;
+		
+		document.getElementById('demo1').value=result1;
+	}*/
+	
+$(document).ready(function(){
+$("#demo1").keyup(function conv(){var num1=document.getElementById('demo1').value;
+		var result= num1*72.5;
+		
+		document.getElementById('demo2').value=result;});
+});
+$(document).ready(function(){
+$("#demo2").keyup(function conv1(){var num2=document.getElementById('demo2').value;
+		var result1= num2/72.5;
+		
+		document.getElementById('demo1').value=result1;});
+});
+</script>
+</body>
+</html>

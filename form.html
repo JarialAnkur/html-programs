@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate(){
+var a= document.getElementById("uname").value;
+var b= document.getElementById("pswrd").value;
+if(a =="")
+{
+window.alert("Please enter username");
+a.focus();
+return false;
+}
+if(b=="")
+{
+window.alert("Please enter password");
+b.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="form1" onsubmit="validate()">
+Username(E-mail) :<input type="email" name="username" id="uname"><br>
+Password:<input type="password" name="password" id="pswrd"><br>
+Gender: 
+<input type="radio" name="gender" value="male" checked>MALE<br>
+<input type="radio" name="gender" value="female">FEMALE<br>
+Hobies:
+<input type="checkbox" name="hobby" value="reading">Reading<br>
+<input type="checkbox" name="hobby" value="Drawing">Drawing<br>
+<input type="checkbox" name="hobby" value="Playing">Playing<br>
+
+<input type="submit" value="submit" name="Submit">
+<input type="reset" value="reset" name="reset">
+
+		
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function emailvalidator(){
+			var emailbox=document.getElementById("txtbox");
+			var emaildata=emailbox.value;
+			var emailreg=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+			emailbox.style.color="black";
+			if(emailreg.test(emaildata))
+			{
+
+				alert("Email is Valid");
+			}
+			else
+			{
+				alert("email is not valid");
+			}
+		}
+	</script>
+</head>
+<body>
+E-Mail : <input type="text" id="txtbox"/>
+<button onclick="emailvalidator()" >Submit</button>
+</body>
+</html>

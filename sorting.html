@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<p>Sorting of an array</p>
+<button onclick="sort()">Click me</button>
+<p id="demo"></p>
+<script>
+var arr=[10,50,2,100,52,3];
+document.getElementById("demo").innerHTML=arr;
+function sort(){
+
+for(var i=0;i<=arr.length;i++)
+{
+for(var j=0;j<i;j++)
+{
+if(arr[i]<arr[j])
+	{
+	var x=arr[i];
+	arr[i]=arr[j];
+	arr[j]=x;
+	}
+}
+}
+document.getElementById("demo").innerHTML=arr;
+}
+</script>
+</body>
+</html>

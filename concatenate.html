@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<input type="text" id="demo1">
+	<input type="text" id="demo2">
+	<button onclick="concat1()">Concatenate</button>
+
+<p id="demo3"> </p>
+
+<script type="text/javascript">
+	function concat1(){
+	var str1=document.getElementById('demo1').value;
+	var str2=document.getElementById('demo2').value;
+	var str3=str1+" " + str2;
+
+	
+		document.getElementById('demo3').innerHTML=str3;
+
+	}
+</script>
+</body>
+</html>

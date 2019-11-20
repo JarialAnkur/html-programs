@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+</head>
+<body>
+<script>
+angular.module('mymodule',[])
+		.controller('myctrl',function($scope)
+		{
+			$scope.tasks=[];
+			$scope.add=function()
+			{
+				$scope.tasks.push($scope.title);
+			}
+			$scope.delete=function()
+			{
+				$scope.tasks.splice(this.$index,1);
+			}
+		});
+</script>
+<div ng-app="mymodule" ng-controller="myctrl">
+<input ng-model="title">
+<button ng-click="add()">Add</button>
+<ul>
+<li ng-repeat="x in tasks">
+{{x}}
+<button ng-click="delete()">Delete</button>
+</li>
+</ul>
+</div>
+</body>
+</html>

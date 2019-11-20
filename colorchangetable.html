@@ -1,0 +1,23 @@
+<html>
+<body>
+<style>
+table,tr,td{
+border-collapse:collapse;
+border-color:black;
+border-style: solid;}
+</style>
+<table>
+<tr>
+<td onmouseover="chng(this.style.backgroundColor)" style="background-color : Red;" >Red</td>
+<td onmouseover="chng(this.style.backgroundColor)" style="background-color : Blue;">Blue</td>
+<td onmouseover="chng(this.style.backgroundColor)" style="background-color : Green;">Green</td>
+</tr>
+</table>
+<script>
+function chng(bg)
+{
+document.body.style.background=bg;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+input{
+height:100px;
+width: 200px;
+border-style:groove;
+border-color:black;
+font-size:50px;
+}
+</style>
+<script>
+function zoomin(){
+var img = document.getElementById("demo");
+img.style.height="300px";
+img.style.width="500px";
+img.style.font-size="80px";
+}
+</script>
+</head>
+<body>
+<input type="text" id="demo" onmouseover="zoomin()" onmouseout="">
+</body>
+</html>

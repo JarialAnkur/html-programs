@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+</head>
+<body>
+<script>
+angular.module("myapp",[]).controller("myctrl",function($scope){
+$scope.arr=[
+			{name:'jani',country:'norway'},
+			{name:'hege',country:'sweden'},
+			{name:'kai',country:'denmark'}
+];
+});
+</script>
+<div ng-app="myapp" ng-controller="myctrl">
+<ul>
+<li ng-repeat="x in arr | orderBy:'name'">
+{{x.name + ' , ' + x.country}}
+</li>
+</ul>
+</div>
+</body>
+</html>
